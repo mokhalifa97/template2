@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+/*? ************************ global style ************************* */
+
+:root {
+    --tb_nav: #212934;
+    --smooth_text: #e9eef5;
+    --section_one: #efefef;
+    --main_bg: #ffffff;
+    --section_three: #e9eef5;
+    --contact: #212934;
+    --button: #59ab6e;
+    font-family: 'Cairo', sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 75%;
+}
+
+section {
+    height: 700px;
+}
+
+.float>* {
+    float: left;
+}
+
+.float::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-weight: 500;
+    color: #625252;
+}
+
+/*? ************************ top_header style ************************* */
+.top_nav {
+    background-color: var(--tb_nav);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: var(--smooth_text);
+    overflow: hidden;
+}
+
+header .icons {
+    float: right;
+    padding-top: 10px;
+}
+
+header .icons>i {
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+.info p {
+    padding-right: 5%;
+    font-size: .8rem;
+}
+
+.info p>i {
+    padding-right: 4px;
+}
+
+/*? ************************ nav style ************************* */
+nav {
+    margin-top: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+nav .container {
+    height: 100px;
+}
+
+.nav_logo img {
+    width: 85px;
+}
+
+.nav_icons {
+    float: right;
+    padding-top: 31px;
+}
+
+.nav_icons i {
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.nav_list {
+    position: absolute;
+    float: none;
+    top: 35px;
+    left: 30%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.nav_list a {
+    color: var(--tb_nav);
+    text-decoration: none;
+    padding-right: 95px;
+    font-size: 20px;
+}
+
+/*? ************************ section 1 style ************************* */
+.reaper {
+    background-color: var(--section_one);
+    height: 580px;
+}
+
+.reaper_img img {
+    width: 480px;
+}
+
+section .container {
+    position: relative;
+}
+
+.reaper_img {
+    position: absolute;
+    right: 0;
+    margin: 60px 0;
+}
+
+.reaper_content {
+    position: absolute;
+    left: 0;
+    margin: 180px 0;
+}
+
+.reaper_content .article {
+    text-align: left;
+    width: 50%;
+    line-height: 1.5;
+    color: #504f4e;
+
+}
+
+/*? ************************ section 2 style ************************* */
+.cat_images .img {
+    width: calc(100%/3);
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.cat_images img {
+    width: 290px;
+    border-radius: 50%;
+}
+
+.cat_images {
+    padding-right: 34px;
+}
+
+.cat_content {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cat_content p {
+    line-height: 1.4;
+    font-size: .9rem;
+}
+
+.text_button strong {
+    text-transform: uppercase;
+}
+
+.img .text_button {
+    padding: 10px 0;
+}
+
+.img .text_button input {
+    margin-top: 20px;
+    color: white;
+    background-color: var(--button);
+    width: 80px;
+    height: 35px;
+    border: none;
+    text-transform: capitalize;
+}
+
+.img .text_button input:hover {
+    background-color: white;
+    color: var(--button);
+    border: 1px var(--button) solid;
+}
+
+/*? ************************ section 3 style ************************* */
+.product {
+    background-color: var(--section_three);
+    height: 720px;
+}
+
+.product_gallery {
+    margin: auto;
+}
+
+.product_gallery .product_img {
+    width: 350px;
+    height: 470px;
+    margin-right: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.product_img img {
+    width: 350px;
+}
+
+.product_img .title {
+    margin-left: 15px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.product_img .price-rating {
+    margin-left: 15px;
+}
+
+.product_img h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.fa-star {
+    color: #9b9b9b;
+}
+
+.checked {
+    color: #efef14;
+}
+
+.price-rating {
+    margin: 10px 0;
+}
+
+.price-rating .price {
+    float: right;
+    margin-right: 35px;
+}
+
+.reviews,
+.price {
+    color: #585858;
+    text-transform: capitalize;
+}
+
+/*? ************************ contact style ************************* */
+.contact {
+    background-color: var(--contact);
+    height: 520px;
+}
+
+.half_up .contact_info {
+    width: 356px;
+    padding-right: 10px;
+}
+
+.half_up {
+    padding: 20px 0;
+}
+
+.half_down {
+    border-top: 1px rgba(148, 146, 146, 0.2) solid;
+    padding: 40px 0;
+}
+.contact_button{
+    float: right;
+}
+
+.contact_info .title {
+    color: var(--smooth_text);
+    font-size: 1.5rem;
+    border-bottom: 1px rgba(148, 146, 146, 0.2) solid;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 35px;
+
+}
+
+.contact_info .zay {
+    font-weight: 800;
+    color: #59ab6e;
+}
+
+.contact_info .contact_list {
+    color: var(--smooth_text);
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.contact_list i {
+    margin-right: 10px;
+}
+
+.half_down .contact_logos {
+    font-size: 20px;
+    color: var(--smooth_text);
+}
+
+.contact_logos i {
+    margin-right: 20px;
+}
+
+.contact_logos .fa-border {
+    border: 1px rgba(148, 146, 146, 0.2) solid;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+input[type="text"] {
+    width: 330px;
+    height: 45px;
+    padding-left: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px rgba(148, 146, 146, 0.5) solid;
+    text-transform: capitalize;
+    color: var(--smooth_text);
+}
+
+input[type="submit"] {
+    margin-left: -94px;
+    height: 45px;
+    width: 100px;
+    background-color: var(--button);
+    color: white;
+    border: none;
+    text-transform: capitalize;
+}
+
+/*? ************************ footer style ************************* */
+footer {
+    background-color: #1d242d;
+    height: 100px;
+}
+
+footer .container div {
+    padding-top: 45px;
+    color: var(--smooth_text);
+    text-transform: capitalize;
+}
+
+footer .container div u {
+    color: white;
+}
